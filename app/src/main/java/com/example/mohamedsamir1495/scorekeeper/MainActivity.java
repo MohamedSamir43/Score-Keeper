@@ -15,17 +15,17 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamB = 0;
 
     //Reference to the buttons in the layout
-    Button twoPointsBtnTeamA,onePointBtnTeamA,twoPointsBtnTeamB,onePointBtnTeamB;
+    Button twoPointsBtnTeamA, onePointBtnTeamA, twoPointsBtnTeamB, onePointBtnTeamB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        twoPointsBtnTeamA = (Button)findViewById(R.id.twoPointsTeamA);
-        twoPointsBtnTeamB = (Button)findViewById(R.id.twoPointsTeamB);
+        twoPointsBtnTeamA = (Button) findViewById(R.id.twoPointsTeamA);
+        twoPointsBtnTeamB = (Button) findViewById(R.id.twoPointsTeamB);
 
-        onePointBtnTeamA = (Button)findViewById(R.id.ownPointTeamA);
-        onePointBtnTeamB = (Button)findViewById(R.id.ownPointTeamB);
+        onePointBtnTeamA = (Button) findViewById(R.id.ownPointTeamA);
+        onePointBtnTeamB = (Button) findViewById(R.id.ownPointTeamB);
 
     }
 
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         disableAllButton();
         displayForTeamA(scoreTeamA);
     }
+
     /**
      * Increase the score for Team A by 2 point.
      */
@@ -95,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         disableAllButton();
         displayForTeamB(scoreTeamB);
     }
+
     /**
      * Increase the score for Team B by 2 point.
      */
@@ -149,8 +151,8 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 
-   // Disables all buttons again
-    public void disableAllButton(){
+    // Disables all buttons again
+    public void disableAllButton() {
         twoPointsBtnTeamA.setEnabled(false);
         twoPointsBtnTeamB.setEnabled(false);
         onePointBtnTeamA.setEnabled(false);
